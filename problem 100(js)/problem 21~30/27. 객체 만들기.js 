@@ -1,0 +1,11 @@
+const name = prompt('학생의 이름을 입력해주세요.').split(' ');
+
+const score = prompt('학생의 수학 점수를 입력해주세요.').split(' ');
+
+const result = {};
+
+for(let i=0; i < name.length; i++){
+    result[name[i]] = score[i];
+}
+
+console.log(result);
